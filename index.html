@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br
+">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +17,7 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingpergunta" placeholder="Pergunta 1">
+                        <input type="text" class="form-control" id="floatingpergunta" placeholder="Pergunta 1" required>
                         <label for="floatingpergunta">Pergunta 1</label>
                     </div>
                 </div>
@@ -34,14 +35,14 @@
                 <div class="col-md-6">
                     <div class="form-floating">
                         <input class="form-control" type="text" id="floatingpergunta3" value="Pergunta 3"
-                            aria-label="Pergunta 3" readonly>
+                            aria-label="Pergunta 3" readonly >
 
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <textarea class="form-control" id="floatingTextarea" placeholder="Comentários"></textarea>
+                        <textarea class="form-control" id="floatingTextarea" placeholder="Comentários" required></textarea>
                         <label for="floatingTextarea">Pergunta 4</label>
                     </div>
                 </div>
@@ -49,10 +50,10 @@
 
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="floatingdropdown">Pergunta 5</label>
+                    <label for="floatingdropdown"></label>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="floatingdropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" required>
                             Pergunta 5
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="floatingdropdown">
@@ -66,7 +67,7 @@
                 <div class="col-md-6">
                     <label for="flexRadioDefault1">Pergunta 6</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
                         <label class="form-check-label" for="flexRadioDefault1">
                             Opção 1
                         </label>
@@ -86,7 +87,7 @@
                         <label for="floatingdropdown">Pergunta 7</label>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                             <label class="form-check-label" for="flexCheckDefault">
                                 Opção 1
                             </label>
@@ -110,7 +111,7 @@
                     <div class="col-md-6">
                         <form action="/action_page.php">
                             <label for="birthday">Pergunta 9</label>
-                            <br><input type="date" id="birthday" name="birthday">
+                            <br><input type="date" id="birthday" name="birthday" required>
 
                         </form>
 
@@ -119,19 +120,20 @@
                     <div class="col-md-6">
                         <label for="appt">Pergunta 10</label>
                         <form action="/action_page.php">
-                            <input type="time">
+                            <input type="time" required>
                         </form>
 
 
                     </div>
                 </div>
 
-                <div class="mb-3">
                     <label for="pergunta11">Pergunta 11</label>
 
-                    <input type="file"  class="form-control" id="pergunta11" name="pergunta11" accept="image/png, image/jpeg" />       
+                    <input type="file"  class="form-control" id="pergunta11" name="pergunta11" accept="image/png, image/jpeg" required/>  
+
                     
                 </div>
+                <button  id= "botaofinal"="submit">ENVIAR</button>
             
 
 
